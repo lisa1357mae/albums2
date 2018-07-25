@@ -6,12 +6,12 @@ import {Text, View} from 'react-native';
 
 //Make a component
 
-const Header = () => {
+const Header = (props) => {
   const { textStyle, viewStyle } = styles;
 
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}> Albums! </Text>
+      <Text style={textStyle}> {props.headerText} </Text>
     </View>
   );
 };
@@ -21,10 +21,16 @@ viewStyle: {
   backgroundColor: 'magenta',
   justifyContent: 'center',
   alignItems: 'center',
-  paddingTop: 50,
-  paddingBottom: 50,
+  height: 60,
+  paddingTop: 15,
+  shadowColor: '#000',
+  shadowOffset: {width: 0, height: 5},
+  shadowOpacity: 0.5,
+  elevation: 2,
+  position: 'relative'
+
 },
-textStyle: {
+  textStyle: {
   fontSize: 20
 
 }

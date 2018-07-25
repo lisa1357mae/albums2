@@ -22,7 +22,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.viewStyle}>
-        <Header />
+        <Header headerText={'Albums'} />
         <Text style={styles.welcome}>Hi Lisa !</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
