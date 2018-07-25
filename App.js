@@ -21,7 +21,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.viewStyle}>
         <Header />
         <Text style={styles.welcome}>Hi Lisa !</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'magenta',
+
   },
   welcome: {
     fontSize: 20,
