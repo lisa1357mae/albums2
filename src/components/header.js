@@ -18,10 +18,10 @@ const Header = (props) => {
 //Make the component available to other parts of the app
 const styles = {
 viewStyle: {
-  backgroundColor: 'magenta',
+  backgroundColor: 'purple',
   justifyContent: 'center',
   alignItems: 'center',
-  height: 60,
+  height: 80,
   paddingTop: 15,
   shadowColor: '#000',
   shadowOffset: {width: 0, height: 5},
@@ -31,7 +31,8 @@ viewStyle: {
 
 },
   textStyle: {
-  fontSize: 20
+    color: 'black',
+    fontSize: 20
 
 }
 

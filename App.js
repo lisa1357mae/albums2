@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,9 +24,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.viewStyle}>
         <Header headerText={'Albums'} />
-        <Text style={styles.welcome}>Hi Lisa !</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <AlbumList />
       </View>
     );
   }
@@ -33,19 +32,17 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  backgroundColor: 'black',
 
   },
   welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    //fontSize: 20,
+    //textAlign: 'center',
+    //margin: 10,
   },
   instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    //textAlign: 'center',
+    //color: '#333333',
+    //marginBottom: 5,
   },
 });
